@@ -1,0 +1,92 @@
+/**
+ * 1) Locate the BakeryMain class in one of your workspaces. 
+
+2) In the same workspace, create a Cake class. 
+Do NOT generate a main method- that is what BakeryMain is for. 
+
+3) In the Cake class, declare two attributes: 
+a String called flavor, and an int called layers.
+
+4) Create a constructor that has two formal parameters- 
+one for the flavor, one for the amount of layers. 
+
+5) Create another constructor that has one formal parameter- 
+the flavor. Have this constructor set the layers to 1.
+
+6) Create some functionalities (methods):
+
+a) Create a method called "getFlavor" 
+that returns the flavor of the cake.
+
+b) Create a method called "getLayers" 
+that returns the amount of layers.
+
+c) Create a method called "setFlavor" 
+that has a formal parameter, a String, 
+that changes the flavor of the Cake to the input String.
+
+d) Create a method called "tellIfTasty" 
+that simply prints out "The cake is yummy."
+
+e) Create a method called "incrementLayer"
+ which adds one to the Cake's layer int. 
+ */
+public class Cake 
+{
+String flavor = new String("Strawberry");
+int layers;
+
+Cake tellIfTasty = new Cake("The cake is yummy");
+
+public Cake(String flavor, int layers)
+{
+//assign a flavor to the cake as it is created
+this.flavor = flavor;
+
+//assign the amount of layers
+this.layers = layers;
+}
+
+public Cake(String flavor)
+{
+this.flavor = flavor;
+this.layers = 1;
+}
+
+public String getFlavor() 
+{
+	return this.flavor;
+}
+
+public int getLayers()
+{
+	return this.layers;
+}
+
+public String setFlavor(String flavor)
+{
+	return this.flavor;
+}
+
+public static void tellifTasty()
+{
+	System.out.println("The cake is yummy.");
+}
+
+public int incrementLayer(int layers) 
+{
+	return layers++;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
