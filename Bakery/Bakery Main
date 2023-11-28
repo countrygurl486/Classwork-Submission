@@ -1,0 +1,9 @@
+public class Bakery_Main 
+{
+public static void main1(String[] args)
+	{
+		Cake myFirstCake = new Cake("Strawberry");
+		
+		Cake.tellifTasty();
+	}
+}
