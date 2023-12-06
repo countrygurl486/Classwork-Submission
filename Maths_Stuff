@@ -1,0 +1,55 @@
+public class Maths_Stuff {
+
+	public static void main(String[] args) {
+		// call a method that declares two ints
+		multTwoNums(9,5);
+		{
+			//declare two numbers to test Math methods on
+			
+			int myInt = -4;
+			double myDub = -16.0;
+			
+			//test the sqrt method. it should find the square root
+			double mySqrt = Math.sqrt(myDub);
+			System.out.println(mySqrt);
+		
+
+			//test the abs method. it should produce absolute value
+			double myAbsNum =  Math.abs(myDub);
+			System.out.println(myAbsNum);
+			
+			double myAbsInt = Math.abs(myInt);
+			System.out.println(myAbsInt);
+		
+			//test the pow method
+			//to the power of the second number
+			//it only returns doubles
+			int base = 2;
+			int exp = 5;
+			double prod = Math.pow(base, exp);
+			System.out.println(prod);
+		
+			//print a random number from 1-10 inclusive
+			Math.random()
+			{
+ 			
+ 			
+			}
+	
+	//make for loop that multiplies x and y without using an asterisk
+	public static void multTwoNums(int x, int y) 
+	{
+		//declare a new int that you can add to x when the loop is done  
+		int adder = x;
+		
+		//add x to itself y times
+		for(int i = 1; i < y; i++) 
+		{
+		x *= adder;
+		
+		}
+		System.out.println(x);
+	}
+
+
+}
