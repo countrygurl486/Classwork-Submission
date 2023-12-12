@@ -1,3 +1,13 @@
+/*1. Create a class called "MathStuff" that has a main method.
+
+2. In the main method, call a method called "multTwoNums(parameters here)" that is passed two parameters that are both ints.
+
+3. In the "multTwoNums(parameters here)" method, use a for loop to multiply the two ints WITHOUT using the asterisk (*).
+
+4. In the "multTwoNums(parameters here)" method, print the product you found and return nothing. 
+ * 
+ */
+import java.util.Random;
 public class Maths_Stuff {
 
 	public static void main(String[] args) {
@@ -28,14 +38,133 @@ public class Maths_Stuff {
 			int exp = 5;
 			double prod = Math.pow(base, exp);
 			System.out.println(prod);
+			
+			//Task 1: Instantiate an Integer object
+			Integer myInteger = 4;
+			
+			System.out.println(Integer.MAX_VALUE);
+			System.out.println(Integer.MIN_VALUE);
+			
+			//Task 2: Instantiate a double object
+			Double myDouble = 6.6;
+			
+			//print out the max and min values a Double object can store
+			System.out.println(Double.MAX_VALUE);
+			System.out.println(Double.MIN_VALUE);
+			
+			//Task 3: Declare an int and print it as a double
+			int a = 5;
+			
+			System.out.println(  (double) a);
+					
+			
+			//Task 5: Declare a double and print it as an int
+			//this is another example of casting
+			double b = 6.2;
+			
+			System.out.println((int)b);
 		
-			//print a random number from 1-10 inclusive
-			Math.random()
-			{
- 			
- 			
-			}
+			int q = 7;
+			int r = 2;
+			addTwoIntegers(q,r);
+			
+			int integerSum = addTwoIntegers;
+			System.out.println(integerSum);
+				
+			
+			
+ /**
+  * 
+1. Create a method that generates a random number from 1-10 inclusive.
+
+2. Declare two ints called intA and intB that have values of -36 and +12 respectively.
+
+3. Declare two doubles called dubA and dubB that have values of -100.0 and 0.64 respectively. 
+
+4. Instantiate two Integer objects called integerA and integerB with the same values as the ints. 
+
+5. Instantiate two Double objects called doubleA and doubleB with the same values as the doubles. 
+
+You should have a method that raises one number to another. Do not change this method.
+
+6. Use your method to print out one int raised to the power of the other int. 
+
+7. Use your method to print out one Integer raised to the power of the other Integer. 
+
+8. Use your method to print out one double raised to the power of the other double. 
+
+9. Use your method to print out one Double raised to the power of the other Double. 
+
+For the rest of the problems, use the Math class methods to complete the task.
+
+10. Print out the absolute value of intA, integerA, dubA, and doubleB.
+
+11. Print out the square root of dubB and doubleB.
+
+12. Print out the square root of the absolute value of intA and integerA.
+ */
+		
+
+//task 1: print out a random number 1-10 but we have to start at 0-11 
+//because in code we start at zero 
+
+//task 2: create method random method			
+Random random = new Random();
+//task 3: declare int to where it starts
+int rand = 0;
+//task 4: create a while loop that print a random number but give the parameters 
+//1 through 10 or 0-11
+while (true) 
+{
+	rand = random.nextInt(11);
+	if(rand != 0) break;
+}		
+	//task 5: print out random number
+	System.out.println(rand);
 	
+	//task 6: declare two ints with the values -36 and 12
+	int c = -36;
+	int d = 12;
+	
+	//task 7: declare two doubles with the values of -100.0 and 0.64
+	double dubA = -100.0;
+	double dubB = 0.64;
+	
+	//task 8: instantiate integer objects with the name integerA and integerB
+	Integer integerA = c;
+	Integer integerB = d;
+	
+	//task 9: instantiate double objects with the name doubleA and doubleB
+	Double doubleA = dubA;
+	Double doubleB = dubB;
+	
+	
+	/
+		
+	
+	multTwoNums(c,d);
+	
+	multTwoNums(integerA, integerB);
+	
+	multTwoNums(doubleA, doubleB);
+	
+	
+	System.out.println(Math.abs(c));
+	System.out.println(Math.abs(d));
+	
+	System.out.println(Math.abs(dubA));
+	System.out.println(Math.abs(dubB));
+	
+	System.out.println(Math.sqrt(dubA));
+	System.out.println(Math.sqrt(dubB));
+	
+	System.out.print(Math.sqrt(Math.abs(c)));
+	System.out.print(Math.sqrt(Math.abs(integerA)));
+	
+	{
+	
+	}
+		
 	//make for loop that multiplies x and y without using an asterisk
 	public static void multTwoNums(int x, int y) 
 	{
@@ -43,13 +172,36 @@ public class Maths_Stuff {
 		int adder = x;
 		
 		//add x to itself y times
-		for(int i = 1; i < y; i++) 
+
+
+
+for(int i = 1; i < y; i++) 
 		{
 		x *= adder;
 		
 		}
 		System.out.println(x);
-	}
-
-
+		{
+		}
+		
+		
+		}
+	
+		/*
+		 * this method take in two Integer objects and returns their sum
+		 * as an int
+		 * @param a the first additive 
+		 * @param b the second additive
+		 * @return the sum of a and b as an int
+		 */
+		
+		public static int addTwoIntegers(int a, int b)
+		{
+			return a + b;
+		}
+		
 }
+
+
+
+
