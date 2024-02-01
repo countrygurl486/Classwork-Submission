@@ -1,14 +1,27 @@
-String myBrain = new String ("puakenikeni");
+//instantiate a new string
+	String myBrain = new String ("puakenikeni");
+	
+	//declare a char 
 	char thing = ' ';
 	System.out.println(countChars(myBrain, thing));
 	
 	}
-
+	
+	/**
+	 * create method that counts how many specific characters are in a word
+	 * @param myString
+	 * @param thing
+	 * @return how many specific letters are in your chosen words 
+	 */
 	public static int countChars(String myString, char thing)
 	{
+		//declare an int and set it equal to 0 because that's where the first letter of your chosen word starts
 		int count = 0;
+		
+		//create a for loop that checks the length but also adds one so that it gives the exact amount of the word
 		for (int i = 0; i < myString.length(); i++) 
-		//check if charAt current index = myChar
+		
+			//check if charAt current index = myChar
 		{
 			if(myString.charAt(i) == thing) 
 			{
@@ -16,4 +29,5 @@ String myBrain = new String ("puakenikeni");
 			}
 		}
 		
+		 
 		return count;
