@@ -1,0 +1,19 @@
+String myBrain = new String ("puakenikeni");
+	char thing = ' ';
+	System.out.println(countChars(myBrain, thing));
+	
+	}
+
+	public static int countChars(String myString, char thing)
+	{
+		int count = 0;
+		for (int i = 0; i < myString.length(); i++) 
+		//check if charAt current index = myChar
+		{
+			if(myString.charAt(i) == thing) 
+			{
+				count++;
+			}
+		}
+		
+		return count;
