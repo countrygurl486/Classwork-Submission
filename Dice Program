@@ -1,3 +1,6 @@
+public class Dice_Program {
+
+	public static void main(String[] args) {
 //instantiate a new string
 	String myBrain = new String ("puakenikeni");
 	
@@ -28,6 +31,29 @@
 				count++;
 			}
 		}
-		
-		 
 		return count;
+
+/*
+	 * create method statement that breaks up the string and adds the numbers in that string together.
+	 */
+	public static void rollDice(String str)
+	{
+		//this print statement splits the string where it labels the number and takes the d and labels the other number
+		System.out.println("The first number is " + str.substring(0, str.indexOf('d')) + " and the second number is " + str.substring(2) + ".");
+		
+		//instead of declaring it as a int, you instantiate it as a string so that you can use the substring 
+		//method to break up the string
+		String a = str.substring(0, str.indexOf('d'));
+		String b = str.substring(2);
+		
+		//declare the substrings as ints so that you can turn your string into an int 
+		//so that you can add them together instead of just putting them together
+		int x = Integer.valueOf(   a   );
+		int y = Integer.valueOf(   b   );
+		
+		//delcare another int to add both of them together
+		int sum = x + y;
+		
+		//print out the sum 
+		System.out.println("Their sum is " + sum);
+	}
