@@ -56,4 +56,32 @@ public class Dice_Program {
 		
 		//print out the sum 
 		System.out.println("Their sum is " + sum);
+	private static int rollDice(int times, int faces) {
+	//want a loop that runs x times and it generates random # from 1 to y
+	
+	//we declare an int that starts at 0 so that we have a starting place to add the numbers together
+	int total = 0;
+	
+	//create a for loop that rolls the dice numerous times
+	for(int i = 0; i <= times; i++)
+	{
+		//we declare an int that rolls a random number every time the loop runs
+		int roll = (int) (  (Math.random() + 1) * faces  );
+		//then we take the starting int that we declared before and add it to how many rolls happened
+		total = total += roll;
 	}
+
+	//return the final total
+	return total;
+
+
+
+
+
+
+
+
+
+
+
+}
