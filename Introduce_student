@@ -1,0 +1,51 @@
+/**
+ * this class gives information about the student and their GPA
+ */
+public class Student {
+
+//list properties/data attributes
+private double scienceGrade;
+private double mathGrade;
+private double theologyGrade;
+private int gradeLevel;
+private String name;
+
+/**
+ * This constructor lets us generate grades
+ * for this student.
+ * @param s = scienceGrade
+ * @param m = mathGrade
+ * @param t = theologyGrade
+ */
+
+public Student(double s, double m, double t, int a, String b)
+{
+	scienceGrade = s;
+	mathGrade = m;
+	theologyGrade = t;
+	gradeLevel = a;
+	name = b;
+
+}
+
+/**
+ * this constructor averages this student's GPA
+ * @return sum
+ */
+private double getGPA()
+{
+	double G = scienceGrade + mathGrade + theologyGrade;
+	double sum = G / 3;
+	return sum;
+}
+
+/**
+ * this constructor prints the statement that introduces this student 
+ */
+public void introduceSelf()
+{
+	System.out.println("I am a student in grade " + gradeLevel + "my name is " + name + "." + "My average GPA is " + getGPA());
+}
+
+
+}
