@@ -1,0 +1,25 @@
+int[] arr4 = {10,9,4};
+		giveFirstAndLastArray(arr4);
+		
+		
+		//TASK 2: make a method that changes an array. it should be
+		//passed the array and the index you want to change.
+		//it will divide specified index by 2
+		int [] arr5 = {2,4,10};
+		divideElementbyTwo(arr5,1);
+		
+		//for example ( {2,4,6,8} , 2) ----> {2,4,3,8}
+	}
+
+	private static void divideElementbyTwo(int[] arr5, int n) 
+	{
+		//divide the second number by 2
+		arr5[n] = arr5[n]/2;
+		
+		//print out the answer
+		System.out.println( arr5[n] );		
+	}
+
+	private static void giveFirstAndLastArray(int[] arr4) {
+		//print out the first and last element of the array
+		System.out.println("The first and last element are " + arr4[0] + " and " + arr4[arr4.length -1]);
