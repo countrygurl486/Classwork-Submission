@@ -14,10 +14,10 @@ int[] arr4 = {10,9,4};
 	private static void divideElementbyTwo(int[] arr5, int n) 
 	{
 		//divide the second number by 2
-		arr5[n] = arr5[n]/2;
+		int quo = arr5[n]/2;
 		
-		//print out the answer
-		System.out.println( arr5[n] );		
+		//change the array with the nth element changed
+		arr5[n] = quo;	
 	}
 
 	private static void giveFirstAndLastArray(int[] arr4) {
