@@ -23,3 +23,24 @@ int[] arr4 = {10,9,4};
 	private static void giveFirstAndLastArray(int[] arr4) {
 		//print out the first and last element of the array
 		System.out.println("The first and last element are " + arr4[0] + " and " + arr4[arr4.length -1]);
+
+
+
+
+//Print the previous and next number
+double arr[] = {4.5,8.9,3.2,0.4,7.8,1.3};
+		int index = 3;
+		printPrevnextElements(arr, index);	
+	}
+
+	private static void printPrevnextElements(double[] arr, int index) 
+	{
+		
+	//print out the statement that gives the number before it and the number after the 3rd indexx
+		double before = arr[index - 1];
+		double after = arr[index +1];
+		
+		System.out.println("The number before the element at index " + index + " is " + before + " and the number after the element at index " + index + " is " + after);
+	
+		
+	}
