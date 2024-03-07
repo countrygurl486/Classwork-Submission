@@ -1,0 +1,65 @@
+
+public class Arrays {
+
+	public static void main(String[] args) {
+		//declare an array of doubles
+		double [] arr = {3.8,9.7,6.0};
+		//create method to add the elements in arr together
+		sumArrElements(arr);
+		
+		//declare an array of ints
+		int [] arr1 = {4,9,8,3,7,0};
+		//create method that changes every other element to 1
+		makeEveryOtherOne(arr1);
+		
+		//create method that prints the array
+		printArr(arr1);
+	}
+
+/**
+ * this method is passed an array and prints out the 
+ * changed elements
+ * @param arr1
+ */
+	
+
+	private static void printArr(int[] arr1) {
+		// declare a variable to be the traverser
+		int traverser;
+	
+		//create loop to change every element from start to finish
+		for(traverser = 0; traverser <= arr1.length -1; traverser++)
+		{
+			//print out your array with the changed elements
+			System.out.println(arr1[traverser]);
+		}
+	}
+
+/**
+ * this array changes every other element to 1 
+ * @param arr1
+ */
+
+
+	private static void makeEveryOtherOne(int[] arr1) {
+		//change array elements to equal 1 
+		arr1[1] = 1;
+		arr1[3] = 1;
+		arr1[5] = 1;
+		
+	}
+	
+/** 
+ * this method adds together all of the elements in the array.
+ * @param arr
+ */
+
+	private static void sumArrElements(double[] arr) {
+		//declare a variable that adds all the elements together
+		double Total = arr[0] + arr[1] + arr[2];
+		
+		//print out the sum
+		System.out.println(Total);
+	}
+
+}
