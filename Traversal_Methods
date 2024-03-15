@@ -4,7 +4,7 @@ public class Traversal_Methods {
 /**
  *1. Make a method that is passed an int array and returns the highest value in that array.
  * @param arr
- * @return the highest value
+ * @return the highest element in the array
  */
 
 public static int getHighestValue(int [] arr)
@@ -24,7 +24,7 @@ public static int getHighestValue(int [] arr)
 /**
  * 2.Make a method that is passed an array of doubles and returns a double consisting of their average. 
  * @param arr
- * @return average
+ * @return the average of the array
  */
 public static double getAverage (double[] arr)
 {
@@ -58,7 +58,11 @@ return hasEven;
 }
 
 
-//4.Make a method that is passed an int array and returns whether or not the array has ALL even numbers in it.
+/**
+ * 4.Make a method that is passed an int array and returns whether or not the array has ALL even numbers in it.
+ * @param arr
+ * @return whether or not this array has all even numbers
+ */
 public static boolean checkAllEvens(int [] arr)
 {
 	int traverser = 0;
@@ -77,7 +81,7 @@ return hasEven;
 /**
  * 5. Make a method that is passed a double array and returns whether or not three consecutive doubles of the same value appear in the array.
  * @param arr
- * @return hasThree
+ * @return whether or not three consecutive doubles of the same value appears in the array
  */
 
 	public static boolean checkThreeSame(double[] arr)
