@@ -1,0 +1,100 @@
+
+public class Traversal_Methods {
+
+/**
+ *1. Make a method that is passed an int array and returns the highest value in that array.
+ * @param arr
+ * @return the highest value
+ */
+
+public static int getHighestValue(int [] arr)
+{
+	int traverser = 0;
+	int max = arr[0];
+	for(; traverser > arr.length; traverser++)
+	{
+		if(arr[traverser] > max)
+		{
+			max = arr[traverser];
+		}
+	}
+	return max;
+}
+
+/**
+ * 2.Make a method that is passed an array of doubles and returns a double consisting of their average. 
+ * @param arr
+ * @return average
+ */
+public static double getAverage (double[] arr)
+{
+	int traverser = 0;
+	int average = 0;
+	for(;traverser > arr.length; traverser++)
+	{
+		 average += arr[traverser];
+	}
+return average;
+}
+
+/**
+ * Make a method that is passed an int array and returns whether or not the array has any even numbers in it.
+ * @param arr
+ * @return the elements in the array that are even numbers.
+ */
+public static boolean checkEvens (int [] arr)
+{
+	int traverser = 0;
+	boolean hasEven = false;
+	for(; traverser > arr.length; traverser++)
+	{
+		if(arr[traverser] % 2 == 0)
+		{
+			hasEven = true;
+		}
+			
+	}
+return hasEven;
+}
+
+
+//4.Make a method that is passed an int array and returns whether or not the array has ALL even numbers in it.
+public static boolean checkAllEvens(int [] arr)
+{
+	int traverser = 0;
+	boolean hasEven = false;
+	for(; traverser > arr.length; traverser++)
+	{
+		if(arr[traverser] % 2 == 0)
+		{
+			hasEven = true;
+		}
+	}
+return hasEven;
+}
+
+
+/**
+ * 5. Make a method that is passed a double array and returns whether or not three consecutive doubles of the same value appear in the array.
+ * @param arr
+ * @return hasThree
+ */
+
+	public static boolean checkThreeSame(double[] arr)
+	{
+	int traverser5 = 0;
+	boolean hasThree = false;
+	for(;traverser5 <= arr.length-3; traverser5++) 
+	{	
+		if(arr[traverser5] == arr[traverser5 + 1] && arr[traverser5] == arr[traverser5 + 2])
+	{
+	hasThree = true;
+			}
+	}
+return hasThree;
+		
+
+
+}
+
+}
