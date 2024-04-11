@@ -17,44 +17,61 @@ Example input and resulting array: ( {2, 4, 6, 8, 5, 10, 12} , 3 ) -----> {2, 4,
 TASK 3: Create a method insertionSort (that is passed an int array) with a for loop that traverses the array from left to right. 
 On each iteration of the loop (in the work) write code that calls the arrayShifter method and passes it the array and the current loop index.
 	 */
-		//int index = 5; 
+		
+		
+		//create an array
 		int [] arr = {4, 2, 7, 9, 1, 11};
+		
 		//int [] arr1 = {1,2,3,10,4};
 		
 		//arrayShifter(arr,index);
 		
-		
+		//create the method insertionSort with your created array as it's parameters
 		insertionSort(arr);
 		
+		//create method that prints out your traversed and sorted array
 		printArr(arr);
 	}
 	
+	//this method traverses through entire array and sorts it numerically
 	private static int [] insertionSort(int[] arr1) 
 	{
 		
+		//this for loop traverses through the array
 		for(int i = 0;i < arr1.length;i++)
 		{
+			//we call this method to use it's code that sorts the array in numerical order
 			arrayShifter(arr1, i);
 		}
 		
+		//return the sorted arr
 		return arr1;
 	}
 
+	//this method uses code to sort the array in numerical order starting from the last element
 	private static void arrayShifter(int[] arr, int index) 
 	{
+	//this is a placeholder that helps swap the elements
 	int temp = 0;
 	
+	//the index tells you which element is getting swapped
 	int i = index;
+	
+	//this while loop has the index go through the entire array in order to sort it
 	while(i > 0 && arr[i] < arr[i-1])
 		{
+		//these three lines allows the elements to be swapped until ii finds the right place in the array
 		temp = arr[i-1];
 		arr[i-1] = arr[i];
 		arr[i] = temp;
+		
+		//this decrements the index until we are done because we start with the last element
 		i--;
 		}
 		
 	}
 
+	//this entire method prints out the finished array
 	public static void printArr(int[] arr1)
 	{
 		int i = 0;
