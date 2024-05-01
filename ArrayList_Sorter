@@ -1,0 +1,92 @@
+import java.util.ArrayList;
+public class ArrayList_Sorters {
+
+	public static void main(String[] args) {
+	/**
+	* Task 1: In the main method, instantiate two ArrayLists nums and names of Integers (remember ints wouldn't work for ArrayLists) 
+	* and Strings respectively. Fill them with five unsorted values (nums out of numerical order and names out of alphabetical order). 
+
+	 * Task 2: Create a void method bubbleSortNumbers that is passed an ArrayList 
+	 * and bubble sorts it just like we did for arrays. 
+
+	 * Task 3: Create a void method bubbleSortStrings that is passed an ArrayList 
+	 * and bubble sorts it into alphabetical order. 
+	*/
+		ArrayList <Integer> nums = new ArrayList <Integer> ();
+		
+		ArrayList <String> names = new ArrayList <String> ();
+		
+		nums.add(5);
+		nums.add(2);
+		nums.add(8);
+		nums.add(7);
+		
+		names.add("Beau");
+		names.add("Emma");
+		names.add("Cosmo");
+		names.add("Blaire");
+		
+		bubbleSortNumbers(nums);
+		bubbleSortStrings(names);
+		
+		
+		
+	}
+
+
+	public static void bubbleSortNumbers(ArrayList<Integer> nums)
+	{
+		if(nums.size() > 1) 
+		{
+			for(int j = 0; j < nums.size();j++)
+			{
+				//the inner loop sorts through the array
+				for(int i = 0; i < nums.size()-1; i ++)
+				{
+					if(nums.get(i) > (nums.get(i+1)))
+					{
+						Integer temp = nums.get(i);
+						nums.set(i,nums.get(i+1));
+						nums.set(i+1, temp);
+					}
+					
+				}
+					
+					
+				}
+				
+			}
+		System.out.println(nums);	
+	}
+
+	public static void bubbleSortStrings(ArrayList<String> names)
+	{
+		if(names.size() > 1) 
+		{
+			for(int j = 0; j < names.size();j++)
+			{
+				for(int i = 0; i < names.size()-1; i ++)
+				{
+					if(names.get(i).compareTo(names.get(i+1)) > 0)
+					{
+						String temp = names.get(i);
+						names.set(i,names.get(i+1));
+						names.set(i+1, temp);
+					}
+					
+				}
+					
+					
+				}
+				
+			}
+		System.out.println(names);
+	}
+	
+
+}
+
+	
+	
+
+
