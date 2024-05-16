@@ -1,0 +1,36 @@
+String [][] fruit =
+		{{"mango", "watermelon", "grapes", "cantaloupe", "lime"},
+		{"mango", "watermelon", "grapes", "cantaloupe", "lime"},
+		{"mango", "watermelon", "grapes", "cantaloupe", "lime"},
+		{"mango", "watermelon", "grapes", "cantaloupe", "lime"},
+		{"mango", "watermelon", "grapes", "cantaloupe", "lime"},
+		{"mango", "watermelon", "grapes", "cantaloupe", "lime"},
+		{"mango", "watermelon", "grapes", "cantaloupe", "lime"}};
+		
+		for(int i = 0; i < fruit.length; i++)
+		{
+			System.out.println(fruit[i][0]);
+		}
+		
+		for(int i = 0; i < fruit[0].length; i++)
+		{
+			System.out.println(fruit[0][i]);
+		}
+		
+		for(int i = 0; i < fruit[0].length; i++)
+		{
+			System.out.println(fruit[1][i]);
+		}
+		
+		for(int i = 0; i < fruit.length; i++)
+		{
+			for(int j = 0; j < i; j++)
+			{
+				System.out.println(fruit[i][j]);
+			}
+		}
+		
+
+	}
+
+}
